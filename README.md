@@ -1,2 +1,4 @@
 # counselors
-the cool page yeah
+This is the counselors page.
+Work is done on the Navbar.
+GET TO WORK!

@@ -130,16 +130,12 @@ ul, ol {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    background-color:#6E8182;
+    background-color:#363435;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-#intro .intro-image {
-height:auto;
-width:100%;	
-	
+	background-image:url(assets/counselors/ForwardFacingOriole.jpg)
 }
 #intro .intro-body {
     display: table-cell;

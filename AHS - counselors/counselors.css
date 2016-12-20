@@ -130,7 +130,7 @@ ul, ol {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    background-color:#111;
+    background-color:#040404;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -213,41 +213,40 @@ ul, ol {
     margin-top: 20px;
 }
 
-/* Athletics CSS */
-#athletics {
+/* Scholarship CSS */
+#scholarship {
     display: table;
     width: 100%;
     height: auto;
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url("assets/athletics/parallaxAthletics.jpg") no-repeat center center fixed;
-    background-color: #000;
+    background-color: #040404;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
-#athletics .body {
+#scholarship .body {
     display: table-cell;
     vertical-align: middle;
 }
-#athletics .body H1 {
+#scholarship .body H1 {
     font-size: 76px;
     font-weight: 700;
     color: rgba(255,255,255,0.8);
     text-transform: uppercase;
 }
-#athletics .body .styled-heading {
+#scholarship .body .styled-heading {
     color: #333;
     text-shadow: 0 4px #111;
 }
-#athletics .body .text {
+#scholarship .body .text {
     font-size: 18px;
 }
 
-/* Activities CSS */
-#activities {
+/* College Lunch Visits CSS */
+#lunch {
     display: table;
     width: 100%;
     height: auto;
@@ -261,26 +260,26 @@ ul, ol {
     background-size: cover;
     -o-background-size: cover;
 }
-#activities .body {
+#lunch .body {
     display: table-cell;
     vertical-align: middle;
 }
-#activities .body H1 {
+#lunch .body H1 {
     font-size: 76px;
     font-weight: 700;
     color: rgba(255,255,255,0.8);
     text-transform: uppercase;
 }
-#activities .body .styled-heading {
+#lunch .body .styled-heading {
     color: #333;
     text-shadow: 0 4px #111;
 }
-#activities .body .text {
+#lunch .body .text {
     font-size: 18px;
 }
 
-/* Counselors CSS */
-#counselors {
+/* Mental Info CSS */
+#mental {
     display: table;
     width: 100%;
     height: auto;
@@ -294,218 +293,54 @@ ul, ol {
     background-size: cover;
     -o-background-size: cover;
 }
-#counselors .body {
+#mental .body {
     display: table-cell;
     vertical-align: middle;
 }
-#counselors .body H1 {
+#mental .body H1 {
     font-size: 76px;
     font-weight: 700;
     color: rgba(255,255,255,0.8);
     text-transform: uppercase;
 }
-#counselors .body .styled-heading {
+#mental .body .styled-heading {
     color: #333;
     text-shadow: 0 4px #111;
 }
-#counselors .body .text {
+#mental .body .text {
     font-size: 18px;
 }
 
-/* Staff CSS */
-@media only screen and (min-width: 500px) {
-    
-}
-
-#staff {
-    padding: 120px 0;
-    background: url("assets/home/gymdoors.jpg") no-repeat center center fixed;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-#staff H1 {
-    font-size: 76px;
-    font-weight: 700;
-    color: rgba(255,255,255,0.8);
-    text-transform: uppercase;
-}
-#staff .styled-heading {
-    color: #333;
-    text-shadow: 0 4px #111;
-}
-#staff .text {
-    font-size: 18px;
-}
-
-.stafflist {
-    background-color: rgba(10,10,10,0.7);
-    padding: 20px;
-    color: #fff;
-}
-.categories {
-	padding-bottom: 30px;
-}
-ul.cat li {
-	display: inline-block;
-    text-align: center;
-}
-ol.type li {
-	display: inline-block;
-	margin-left: 20px;
-    transition: 0.6s;
-}
-ol.type li a {
-	color: #eee;
-	padding: 8px 20px;
-	border: 1px solid #eee;
-	border-radius: 2px;
-    background: rgba(0,0,0,0.44);
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-ol.type .item {
-	float:left;
-}
-
-ol.type li a.active {
-	color: #f6f6f6;
-	border: 1px solid #f05b22;
-	background: #f05b22;
-    transition: 0.6s;
-}
-ol.type li a:hover {
-	color: #f6f6f6;
-	border: 1px solid #f05b22;
-	background: #f05b22;
-    transition: 0.6s;
-}
-.isotope-item {
-	z-index: 2
-}
-.isotope-hidden.isotope-item {
-	z-index: 1
-}
-.isotope, .isotope .isotope-item {
-	/* change duration value to whatever you like */
-	-webkit-transition-duration: 0.8s;
-	-moz-transition-duration: 0.8s;
-	transition-duration: 0.8s;
-}
-.isotope-item {
-	margin-right: -1px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-.isotope {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: height, width;
-	-moz-transition-property: height, width;
-	transition-property: height, width;
-}
-.isotope .isotope-item {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: -webkit-transform, opacity;
-	-moz-transition-property: -moz-transform, opacity;
-	transition-property: transform, opacity;
-}
-.staff-item {
-	margin-bottom: 30px;
-}
-.staff-item .hover-bg {
-	max-height: 180px;
-    max-width: 360px;
-	overflow: hidden;
-	position: relative;
-}
-.hover-bg .hover-text {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: rgba(255,255,255,0.6);
-	background: rgba(0, 0, 0, 0.66);
-	padding: 25% 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
-}
-.hover-bg .hover-text>h4 {
-	opacity: 0;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-	color: #f6f6f6;
-}
-.hover-bg:hover .hover-text>h4 {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.hover-bg .hover-text>p {
-	opacity: 0;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>p {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.hover-bg .hover-text>i {
-	opacity: 0;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>i {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-}
-.hover-bg:hover .hover-text {
-	opacity: 1;
-}
-
-/* General Info CSS */
-#info {
+/* Contact Info CSS */
+#contact {
     padding: 40px 0;
     background: #111;
 }
-#info .text {
+#contact .text {
     margin-left: 5px;
     color: #bbb;
 }
-#info H3 {
+#contact H3 {
     color: #ccc;
     font-size: 20px;
 }
-#info H4 {
+#contact H4 {
     font-size: 15px;
     color: #ccc;
 }
-#info li {
+#contact li {
     margin-bottom: 3px;
     list-style: none;
     padding: 0;
     font-size: 13px;
 }
-#info .col-md-4 li:before {
+#contact .col-md-4 li:before {
     content: "|";
     font-weight: 600;
     padding-right: 8px;
     color: #e75926;
 }
-#info i.fa {
+#contact i.fa {
     float: left;
     display: block;
     margin-right: 15px;
@@ -513,9 +348,9 @@ ol.type li a:hover {
     font-size: 44px;
     text-shadow: 0 0 1px #666;
 }
-#info img {
+#contact img {
     margin-top: 20px;
 }
-#info p {
+#contact p {
     margin-top: 20px;
 }

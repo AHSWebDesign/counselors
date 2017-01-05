@@ -1,6 +1,6 @@
 # counselors
 This is the counselors page.
 <br>
-Work is done on the Navbar.
+Work on the sections from the navbar.
 <br>
 GET TO WORK!

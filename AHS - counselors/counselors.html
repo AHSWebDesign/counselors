@@ -31,16 +31,16 @@
     <div class="container">
         <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-        <a class="navbar-brand" href="#intro">Counselors <img src="assets/counselors/ForwardFacingOriole.png" alt="" style="float:left; height:150%; padding-right: 5px;"></a> </div>
+        <a class="navbar-brand sc" href="#intro">Counselors <img src="assets/counselors/ForwardFacingOriole.png" alt="" style="float:left; height:150%; padding-right: 5px;"></a> </div>
     
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse dropdown">
             <ul class="nav navbar-nav dropdown-menu-right">
             	<li class="divider"> </li>
                 <li class="hidden"> <a href="#page-top"></a> </li>
-                <li> <a href="#Scholarship">Scholarship</a> </li>
-                <li> <a href="#College Lunch Visits">College Lunch Visits</a> </li>
-                <li> <a href="#Mental Info">Mental Info</a> </li>
-                <li> <a href="#Contact Info">Contact Info</a> </li>
+                <li> <a class="sc" href="#scholarship">Scholarship</a> </li>
+                <li> <a class="sc" href="#lunch">College Lunch Visits</a> </li>
+                <li> <a class="sc" href="#mental">Mental Info</a> </li>
+                <li> <a class="sc" href="#contact">Contact Info</a> </li>
             </ul>
         </div>
     </div>
@@ -98,18 +98,21 @@
 </div>
 
 <!-- Scholarship -->
+<div id="scholarship" style="height:100%;">
  <div class="scholarship-body">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                  <h1><span class="styled-heading">Scholarships</span></h1>
                     <br>
-                <a href="#events" class="btn btn-default page-scroll sc">National / Regional</a> 
-                <a href="#events" class="btn btn-default page-scroll sc">Local / Community</a></div>
+                <button type="button" onclick="document.getElementById('local/community').innerHTML = local/community()" class="btn btn-default page-scroll sc">Local / Community</button> 
+                <button type="button" onclick="document.getElementById('national/regional').innerHTML = national/regional()" class="btn btn-default page-scroll sc">National / Regional</button></div>
             </div>
+            <p id="local/community"></p>
+            <p id="national/regional"></p>
         </div>
     </div>
-
+</div>
 
 
     

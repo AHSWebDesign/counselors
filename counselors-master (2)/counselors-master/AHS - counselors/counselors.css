@@ -107,6 +107,21 @@ h5 {
 	padding-left: 30px;
 	
 }
+
+h6 {
+	text-transform: uppercase;
+	color:#FFFFFF;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	padding-left: 540px
+	
+	
+	
+}
+	
+	
+	
 p {
     font-size: 14px;
     color: #ccc
@@ -373,128 +388,130 @@ ul, ol {
     margin-top: 20px;
 }
 
-{
 
-body 
-  background-color: #e1dddc
-  -webkit-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none 
-@mixin text-style()
-  text-transform: uppercase
-  color: #a79b97
-  font-family: 'PT Sans Caption'
-  font-weight: normal
-  font-style: normal
-  font-size: 18px 
-  
-$lineh: 20px
-  
-@mixin line-style()  
-  height: $lineh
-  width: 300px
-  line-height: $lineh
-  padding: 15px 10px
-.search-select
-  margin: 30px auto
-  width: 200px
-  .field
-    border: 1px solid #cbbeb9
-    box-shadow: 0 1px 0px #f1efee
-    @include line-style()
-    display: inline-block
-    +background-image(linear-gradient(#fafafa, #fdfbfa))
-    border-radius: 4px
-    cursor: pointer
-  .icon 
-    &:after
-      font-style: normal
-      font-family: FontA  
-      color: #a79b97
-      font-size: 20px
-      position: relative
-      right: 10px
-      opacity: .8
-      float: right
-    &.user:after
-      content: "\f007"
-    &.list:after
-      content: "\f0ca"
-    &.stat:after
-      content: "\f080"
-    &.accs:after
-      content: "\f085"
-    &.sign:after
-      content: "\f08b"    
-    &.arrow:after
-      content: "\F0DE"       
-      
-  input
-    display: none
-    &:checked + .select
-      opacity: 1
-      top: 15px
-  ul.select
-    +transition-property(opacity, top)
-    +transition-duration(.1s)
-    +transition-timing-function(ease-in)
-    opacity: 0
-    list-style: none
-    padding: 0
-    margin: 0
-    background-color: white
-    border-radius: 4px
-    width: 319px
-    position: relative
-    top: 10px
-    left: 1px
-    box-shadow: 0 2px 6px rgba(0,0,0,.2)
-    li
-      &.arrow 
-        display: inline
-        position: absolute
-        top: -20px
-        left: 270px
-        width: 20px
-        height: 20px
-        z-index: 0
-          
-        border: none
-        &:after
-          font-size: 40px
-          color: white
-          opacity: 1
-      &:nth-child(2)
-        border-radius: 4px 4px 0 0
-      &:last-child
-        border-radius: 0 0 4px 4px      
-      z-index: 1
-      overflow: hidden
-      position: relative
-      cursor: pointer
-      @include line-style()
-      @include text-style()
-      padding-left: 20px
-      width: 290px
-      color: #c0b7b4
-      border-bottom: 1px solid #ddd8d7
-      &:not(.icon):hover
-        margin-top: -1px
-        background-color: #e38461
-        color: white
-        border-top: 1px solid #df6e52
-        border-bottom: 1px solid #df6e52
-        i:after
-          color: white
-      &:last-child
-        border: none
-      i:after 
-        color: #c0b7b4
-  label
-    cursor: pointer
-    @include line-style()
-    @include text-style()
-      
-@import compass/css3
 
+#And {
+	
+	float: left;
+	width: 25%;
+	
 }
+
+
+#Vid  {
+	
+	float: left;
+	width: 50%;
+	
+	
+}
+
+
+
+/* Hamblin */ 
+    #Hamm {
+       
+		float: left;
+		width: 25%;
+        
+    }
+
+
+
+
+
+body {
+    background:#000000;
+}
+
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#3e3436;
+}
+
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+}
+
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+
+
+

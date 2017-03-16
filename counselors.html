@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AHS Counselors</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/nav.css" rel="stylesheet" type="text/css">
+	<link href="counselors.css" rel="stylesheet" type="text/css">
+	<link href="bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css"  href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Other JavaScript plugins -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery.backstretch.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+  <body data-spy="scroll" data-target="#navbar">
+  
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+    
+<!-- Navigation -->
+
+<nav id ="navbar" class="navbar navbar-custom-faded navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+        <a class="navbar-brand sc" href="#intro">Counselors <img src="assets/counselors/ForwardFacingOriole.png" alt="Oriole" style="float:left; height:100%; padding-right: 10px;"></a>
+    </div>
+    
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li class="hidden"> <a href="#page-top"></a> </li>
+                <li> <a class="sc" href="#scholarship">Scholarships</a> </li>
+                <li> <a class="sc" href="#lunch">College Lunch Visits</a> </li>
+                <li> <a class="sc" href="#mental">Mental Info </a> </li>
+                <li> <a class="sc" href="#contact">Contact Info</a> </li>
+                <li> <a class="sc" href="#links">Links</a> </li>
+            </ul>
+        </div>
+        <!--Insert Link To Home Page-->
+		<a href=""><button type="button" class="navbar-home"> <i class="fa fa-home"> </i> </button></a>
+    </div>
+</nav>
+
+<!--Home-->
+<div id="intro" style="height:100%;">
+     <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                 <h1><span>Counselors</span></h1>
+                 <br>
+                  <a href="#events" class="btn btn-default page-scroll sc">Events</a>
+          	  </div>
+        	</div>
+    	</div>
+	</div>  
+</div> 
+
+<!-- Upcoming Events -->
+<div id="events" class="pDivider">
+    <div class="container">
+      <div class="section-title text-center center">
+        <h2>Events</h2>
+        <hr>
+      </div>
+        <div class="row">
+            <div class="col-md-4" style="width:50%; float:left;">
+                    <div class="text">
+                    <h4>Upcoming Events</h4>
+                    <ul>
+                        <li id="1UE">Error: Contact an admin</li>
+                        <li id="2UE">Error: Contact an admin</li>
+                        <li id="3UE">Error: Contact an admin</li>
+                        <li id="4UE">Error: Contact an admin</li>
+                        <li id="5UE">Error: Contact an admin</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4" style="width:50%; float:right;">
+                    <div class="text">
+                    <h4>Today's Events</h4>
+                    <ul>
+                        <li id="1TE">Error: Contact an admin</li>
+                        <li id="2TE">Error: Contact an admin</li>
+                        <li id="3TE">Error: Contact an admin</li>
+                        <li id="4TE">Error: Contact an admin</li>
+                        <li id="5TE">Error: Contact an admin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scholarship -->
+<div id="scholarship" style="height:100%;">
+ <div class="scholarship-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                 <h1 style="padding-bottom:100px;"><span>Scholarships</span></h1>
+                    <br>
+                <button style="width:200px;" type="button" onclick="document.getElementById('local/community').innerHTML = local/community()" class="btn btn-default page-scroll sc">Local / Community</button> 
+                <button style="width:200px;" type="button" onclick="document.getElementById('national/regional').innerHTML = national/regional()" class="btn btn-default page-scroll sc">National / Regional</button></div>
+            </div>
+            <p id="local/community"></p>
+            <p id="national/regional"></p>
+        </div>
+    </div>
+</div>
+
+<!--College Lunch Visits-->
+<div id="lunch" style="height:100%;">
+	<div class="lunch-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                 <h1 style="padding-bottom:100px;"><span>College Lunch Visits</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Mental Info-->
+<div id="mental" style="height:100%;">
+	<div class="mental-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                 <h1 style="padding-bottom:100px;"><span>Mental Info</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!--Contact Info-->
+<div id="contact" style="height:100%;">
+	<div class="contact-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                 <h1 style="padding-bottom:100px;"><span>Contact Info</span></h1>
+                 </div>
+			</div>
+		</div>
+        <div class="container">
+		<div class="row">
+			<div class="counselor col-sm-12">
+			<h2 style="text-align:left; padding-bottom:20px;">Tracy Anderson</h2>
+			<img src="assets/counselors/TRACYANDERSON.jpg" alt="Tracy Anderson" style="float:left;"> 
+				<div class="contactinfo">
+				<p style="padding:10px">(Sophomore and Senior Counselor) 
+				<br>
+				Ms. Anderson works directly with all aspects concerning Sophomores and Seniors.  
+				In addition she is responsible for scheduling all college visits, manages the web page and 
+				coordinates the local and community scholarships.
+                <br>
+                <br>
+                Email: tanderson@usd402.com</p>
+				</div>
+			</div>
+		</div>
+        </div>
+		<br>
+        <div class="container">
+		<div class="row">
+ 			<div class="counselor col-sm-12">
+				<h2 style="text-align:left; padding-bottom:20px;">Elizabeth Hamblin</h2>
+				<img src="assets/counselors/ELIZABETHHAMBLIN.jpg" alt="Elizabeth Hamblin" style="float:left;"> 
+				<div class="contactinfo">
+				<p style="padding:10px"> (Freshmen and Junior Counselor)
+				<br>
+				Mrs. Hamblin works directly with all aspects concerning Freshmen and Juniors.  In addition 
+				she coordinates all testing including state testing, the ASVAB and ASSET tests, enrollment and 															 				scheduling.
+				<br>
+                <br>
+                Email: ehamblin@usd402.com</p>
+				</div>
+			</div>
+		</div>
+        </div>
+	</div>
+</div>
+    
+<!--Links-->
+<div id="links" style="height:100%;">
+	<div class="links-body">
+        <div class="container" style="margin-bottom:5px; padding-bottom:5px;">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                 <h1 style="padding-bottom:100px;"><span>Links</span></h1>
+                </div>
+			</div>
+            <div class="container">
+                	<a style="margin:1px; text-align:center; width:200px;" href=
+                    "http://www.act.org/content/act/en/products-and-services/the-act.html" 
+                    class="btn btn-default page-scroll sc"> ACT</a>
+                    
+                	<a style="margin:1px; text-align:center; width:200px;" href=
+                    "http://www.thesimpledollar.com/college-scholarship-guide/" 
+                    class="btn btn-default page-scroll sc">College Scholarship<br> Resource Guide</a>
+                    
+					<a style="margin:1px; text-align:center; width:200px;" href=
+                    "http://www.consumerreports.org/cro/resources/streaming/college-choices/final/college-choices.htm" 
+                    class="btn btn-default page-scroll sc">Free Consumer <br>Reports-Colleges</a>
+                    
+            		<a style="margin:1px; text-align:center; width:200px;" href=
+                    "http://www.kansasregents.org/academic_affairs/qualified_admissions" 																		 					class="btn btn-default page-scroll sc">Kansas Board of Regents<br>Qualified Admissions</a>
+                    
+                	<a style="margin:1px; text-align:center; width:200px;" href=
+                    "http://www.thesimpledollar.com/affordable-online-colleges/" class="btn btn-default 
+                    page-scroll sc">Most Affordable Online<br> Colleges for 2016</a>
+                    
+					<a style="margin:1px; text-align:center; width:200px;" href=
+                    "http://s3.amazonaws.com/scschoolfiles/695/bor_state_scholar_requirements.pdf" 
+                    class="btn btn-default page-scroll sc">Kansas State<br> Scholars Curriculum</a>
+                    
+					<a style="margin:1px; text-align:center; width:200px;" href=
+                    "http://www.parchment.com/order/" class="btn btn-default page-scroll 
+                    sc">Transcript Requests</a>
+                    
+                	<a style="margin:1px; text-align:center; width:200px" href=
+                    "http://www.ncaapublications.com/productdownloads/CBSA17.pdf" class="btn 
+                    btn-default page-scroll sc">NCAA for the College <br>Bound Student Athlete</a>
+                    </div>
+		</div>
+	</div>
+</div> 
+</body>
+</html>

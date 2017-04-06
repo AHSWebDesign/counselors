@@ -45,13 +45,39 @@ body, html {
 	#portfoliolist .portfolio {
 		width:48%;
 		margin:1%;
-	}		
+	}
+	H1 span {
+		font-size: 24px;	
+	}	
+	H2 {
+		font-size:18px;
+	}
 }
 
 /* #Mobile (Landscape) - Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	.container {
 		width: 70%;
+	}
+	H1 span {
+		font-size: 32px;	
+	}
+	H2 {
+		font-size:24px;
+	}
+}
+@media only screen and (min-width: 980px) {
+    #info .info-column {
+        float:left;
+    }
+    #info .info-content {
+        text-align: center;
+    }
+	H1 span {
+		font-size:54px;	
+	}
+	H2 {
+		font-size:36px;
 	}
 }
 /* CARD */

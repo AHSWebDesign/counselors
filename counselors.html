@@ -39,6 +39,35 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<script src="js/bootstrap.js"></script>
     
+      <script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.spring'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		filterList.init();
+		
+		
+	});	
+	</script>
+    
 <!-- Navigation -->
 
 <nav id ="navbar" class="navbar navbar-custom-faded navbar-custom navbar-fixed-top" role="navigation">
@@ -46,20 +75,20 @@
         <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
         <a class="navbar-brand sc" href="#intro">Counselors <img src="assets/counselors/ForwardFacingOriole.png" alt="Oriole" style="float:left; height:100%; padding-right: 10px;"></a>
+        <a href="" style="height:100%; float:left;"><button type="button" class="navbar-home"> <i class="fa fa-home"> </i> </button></a>
     </div>
-    
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
                 <li class="hidden"> <a href="#page-top"></a> </li>
                 <li> <a class="sc" href="#scholarship">Scholarships</a> </li>
-                <li> <a class="sc" href="#lunch">College Lunch Visits</a> </li>
+                <li> <a class="sc" href="#lunch">Lunch Visits</a> </li>
                 <li> <a class="sc" href="#mental">Mental Info </a> </li>
                 <li> <a class="sc" href="#contact">Contact Info</a> </li>
                 <li> <a class="sc" href="#links">Links</a> </li>
             </ul>
         </div>
         <!--Insert Link To Home Page-->
-		<a href=""><button type="button" class="navbar-home"> <i class="fa fa-home"> </i> </button></a>
+		
     </div>
 </nav>
 
@@ -122,23 +151,39 @@
                 <div class="col-md-10 col-md-offset-1">
                  <h1 style="padding-bottom:100px;"><span>Scholarships</span></h1>
                     <br>
-                <button style="width:200px;" type="button" onclick="document.getElementById('local/community').innerHTML = local/community()" class="btn btn-default page-scroll sc">Local / Community</button> 
-                <button style="width:200px;" type="button" onclick="document.getElementById('national/regional').innerHTML = national/regional()" class="btn btn-default page-scroll sc">National / Regional</button></div>
+					<ul id="filters" class="clearfix">
+           				<li><span class="filter active" data-filter=".local/community, .national/regional">All</span></li>
+            			<li><span class="filter" data-filter=".local/community">Local / Community</span></li>
+            			<li><span class="filter" data-filter=".national/regional">National / Regional</span></li>
+         			</ul>
+                    <div id="portfoliolist">
+						<div class="portfolio local/community" data-cat="local/community">
+							<div class="portfolio-wrapper">
+								<div class="label">
+									<div class="label-text">
+									<a class="text-title">Spring Sport</a> 
+									<span class="text-category">Small Description</span>
+									</div>
+									<div class="label-bg"> </div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
             </div>
-            <p id="local/community"></p>
-            <p id="national/regional"></p>
         </div>
     </div>
 </div>
 
-<!--College Lunch Visits-->
+<!--Lunch Visits-->
 <div id="lunch" style="height:100%;">
 	<div class="lunch-body">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                 <h1 style="padding-bottom:100px;"><span>College Lunch Visits</span></h1>
+                 <h1 style="padding-bottom:100px;"><span>Lunch Visits</span></h1>
                 </div>
+				<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ff9900&amp;src=kl8ieplf0lu9p2dgnel4v63ifk%40group.calendar.google.com&amp;color=%23BE6D00&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
     </div>

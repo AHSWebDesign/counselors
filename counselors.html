@@ -99,6 +99,16 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                  <h1 id="heading"><span>Counselors</span></h1>
+                 <br>               
+                 <div class="date">
+					<p id="date"></p>
+                    </div>
+
+					<script>
+						var d = new Date();
+						document.getElementById("date").innerHTML = d.toDateString();
+					</script>
+                 <br> 
                  <br>
                   <a href="#events" class="btn btn-default page-scroll sc">Events</a>
           	  </div>
@@ -145,34 +155,47 @@
 
 <!-- Scholarship -->
 <div id="scholarship" style="height:100%;">
- <div class="scholarship-body">
+ 	<div class="scholarship-body">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                  <h1 style="padding-bottom:100px;"><span>Scholarships</span></h1>
                     <br>
-					<ul id="filters" class="clearfix">
-           				<li><span class="filter active" data-filter=".local/community, .national/regional">All</span></li>
-            			<li><span class="filter" data-filter=".local/community">Local / Community</span></li>
-            			<li><span class="filter" data-filter=".national/regional">National / Regional</span></li>
-         			</ul>
-                    <div id="portfoliolist">
-						<div class="portfolio local/community" data-cat="local/community">
-							<div class="portfolio-wrapper">
-								<div class="label">
-									<div class="label-text">
-									<a class="text-title">Spring Sport</a> 
-									<span class="text-category">Small Description</span>
-									</div>
-									<div class="label-bg"> </div>
+     		   		<div class="scholarshiplist">
+            			<div class="section-title text-center center">
+                			<div class="categories">
+                  			<ul class="cat">
+                   			<li>
+                      		<ol class="type">
+								<li><a class="item" data-filter=".none">None</a></li>
+                        		<li><a class="item active" data-filter="*">All</a></li>
+                        		<li><a class="item" data-filter=".local">Local / Community</a></li>
+                        	<li><a class="item" data-filter=".national">National / Regional</a></li>
+                      		</ol>
+                    		</li>
+                  			</ul>
+                			</div>
+            			</div>
+						<div class="row">
+						<div class="scholarship-items">
+
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 local">
+							<div class="scholarship-item">
+								<div class="hover-bg">
+								<a href="#scholarship">
+									<h4>Scholarship Name</h4>
+									<p>Short Description</p>
+								</a>
 								</div>
 							</div>
 						</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <!--Lunch Visits-->
@@ -183,24 +206,13 @@
                 <div class="col-md-10 col-md-offset-1">
                  <h1 style="padding-bottom:100px;"><span>Lunch Visits</span></h1>
                 </div>
-				<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ff9900&amp;src=kl8ieplf0lu9p2dgnel4v63ifk%40group.calendar.google.com&amp;color=%23BE6D00&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+				<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ff9900&amp;src=kl8ieplf0lu9p2dgnel4v63ifk%40group.calendar.google.com&amp;color=%23BE6D00&amp;ctz=America%2FChicago" style="border-width:0" width="75%" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
     </div>
 </div>
 
-<!--Mental Info-->
-<div id="mental" style="height:100%;">
-	<div class="mental-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                 <h1 style="padding-bottom:100px;"><span>Mental Info</span></h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
     
     <!--Contact Info-->
 <div id="contact" style="height:100%;">
